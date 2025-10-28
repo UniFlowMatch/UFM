@@ -10,6 +10,9 @@ import einops as ein
 import numpy as np
 import torch
 
+from uniflowmatch.utils.misc import invalid_to_nans
+from scipy.spatial import KDTree
+
 
 def depthmap_to_camera_frame(depthmap, intrinsics):
     """
