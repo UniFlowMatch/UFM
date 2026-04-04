@@ -38,7 +38,7 @@
 | UFM-Base-980 | 77 | 0.4B | [infinity1096/UFM-Base-980](https://huggingface.co/infinity1096/UFM-Base-980) |
 | UFM-Refine-980 | 96 | 0.4B | [infinity1096/UFM-Refine-980](https://huggingface.co/infinity1096/UFM-Refine-980) |
 | UFM-Base-DINOv2L-init | 28 | 0.3B | [infinity1096/UFM-Base-DINOv2L-init](https://huggingface.co/infinity1096/UFM-Base-DINOv2L-init) |
-| UFM-Base-DINOv2G-init | 55 | 4.71B | [infinity1096/UFM-Base-DINOv2G-init](https://huggingface.co/infinity1096/UFM-Base-DINOv2G-init) |
+| UFM-Base-DINOv2G-init | 55 | 1B | [infinity1096/UFM-Base-DINOv2G-init](https://huggingface.co/infinity1096/UFM-Base-DINOv2G-init) |
 
 ## Overview
 
