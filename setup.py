@@ -1,6 +1,6 @@
 """Package installation setup."""
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Read long description from README
 try:
@@ -58,7 +58,7 @@ setup(
     author_email="yuchenz7@andrew.cmu.edu",
     url="https://uniflowmatch.github.io/",
     license="BSD Clause-3",
-    packages=["uniception", "uniflowmatch"],  # Directly specify the package
+    packages=find_packages(include=["uniception", "uniflowmatch*"]),
     package_dir={
         "uniception": "UniCeption/uniception",  # Map uniception package
         "uniflowmatch": "uniflowmatch",  # Map uniflowmatch package

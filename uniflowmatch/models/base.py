@@ -74,7 +74,7 @@ class UFMOutputInterface:
 
 from uniception.models.encoders.image_normalizations import IMAGE_NORMALIZATION_DICT
 
-from uniflowmatch.utils.flow_resizing import (
+from ..utils.flow_resizing import (
     AutomaticShapeSelection,
     ResizeToFixedManipulation,
     unmap_predicted_channels,

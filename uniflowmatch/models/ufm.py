@@ -24,15 +24,15 @@ from uniception.models.prediction_heads.dpt import DPTFeature, DPTRegressionProc
 from uniception.models.prediction_heads.mlp_feature import MLPFeature
 from uniception.models.prediction_heads.moge_conv import MoGeConvFeature
 
-from uniflowmatch.models.base import (
+from .base import (
     UFMClassificationRefinementOutput,
     UFMFlowFieldOutput,
     UFMMaskFieldOutput,
     UFMOutputInterface,
     UniFlowMatchModelsBase,
 )
-from uniflowmatch.models.unet_encoder import UNet
-from uniflowmatch.models.utils import get_meshgrid_torch
+from .unet_encoder import UNet
+from .utils import get_meshgrid_torch
 
 CLASSNAME_TO_ADAPTOR_CLASS = {
     "FlowWithConfidenceAdaptor": FlowWithConfidenceAdaptor,
