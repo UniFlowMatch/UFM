@@ -19,6 +19,7 @@
 </p>
 
 ## Updates
+- [2026/04/03] UFM-G version initialized from DINOv2-G weights. More robust and accurate!
 - [2026/02/20] Smaller UFM initialized from DINOv2 weights, faster at similar performance.
 - [2025/10/21] Complete training and most data processing scripts. (branch: train)
 - [2025/10/20] Benchmark & data script for primary results. (branch: benchmark)
@@ -37,6 +38,7 @@
 | UFM-Base-980 | 77 | 0.4B | [infinity1096/UFM-Base-980](https://huggingface.co/infinity1096/UFM-Base-980) |
 | UFM-Refine-980 | 96 | 0.4B | [infinity1096/UFM-Refine-980](https://huggingface.co/infinity1096/UFM-Refine-980) |
 | UFM-Base-DINOv2L-init | 28 | 0.3B | [infinity1096/UFM-Base-DINOv2L-init](https://huggingface.co/infinity1096/UFM-Base-DINOv2L-init) |
+| UFM-Base-DINOv2G-init | 55 | 4.71B | [infinity1096/UFM-Base-DINOv2G-init](https://huggingface.co/infinity1096/UFM-Base-DINOv2G-init) |
 
 ## Overview
 
@@ -126,7 +128,7 @@ from uniflowmatch.models.ufm import UniFlowMatchClassificationRefinement
 model = UniFlowMatchClassificationRefinement.from_pretrained("infinity1096/UFM-Refine")
 
 # Choose from
-# UFM-Base, UFM-Refine, UFM-Base-980, UFM-Refine-980, UFM-Base-DINOv2L-init
+# UFM-Base, UFM-Refine, UFM-Base-980, UFM-Refine-980, UFM-Base-DINOv2L-init, UFM-Base-DINOv2G-init
 
 # Set the model to evaluation mode
 model.eval()

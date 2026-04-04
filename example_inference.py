@@ -98,7 +98,7 @@ def main():
     parser.add_argument(
         "--target", "-t", default="examples/image_pairs/fire_academy_1.png", help="Path to target image"
     )
-    parser.add_argument("--model", choices=["base", "refine", "base-980", "refine-980", "base-dinov2l-init"], default="base", help="Model variant to use")
+    parser.add_argument("--model", choices=["base", "refine", "base-980", "refine-980", "base-dinov2l-init", "base-dinov2g-init"], default="base", help="Model variant to use")
     parser.add_argument("--output", "-o", default="ufm_output.png", help="Output visualization path")
     parser.add_argument("--show", action="store_true", help="Display the visualization")
 
@@ -112,7 +112,8 @@ def main():
         "refine"            : "infinity1096/UFM-Refine",
         "base-980"          : "infinity1096/UFM-Base-980",
         "refine-980"        : "infinity1096/UFM-Refine-980",
-        "base-dinov2l-init" : "infinity1096/UFM-Base-DINOv2L-init"
+        "base-dinov2l-init" : "infinity1096/UFM-Base-DINOv2L-init",
+        "base-dinov2g-init" : "infinity1096/UFM-Base-DINOv2G-init"
     }
 
     if "base" in args.model:
@@ -120,7 +121,7 @@ def main():
     elif "refine" in args.model:
         model = UniFlowMatchClassificationRefinement.from_pretrained(model_repo_map[args.model])
     else:
-        raise ValueError("Please choose from [base, refine, base-980, refine-980, base-dinov2l-init]")
+        raise ValueError("Please choose from [base, refine, base-980, refine-980, base-dinov2l-init, base-dinov2g-init]")
 
     model.eval()
     print("Model loaded successfully!")
