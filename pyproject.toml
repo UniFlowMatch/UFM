@@ -39,7 +39,13 @@ dependencies = [
     "jaxtyping",
     "Pillow",
     "scikit-learn",
-    "hydra-core"
+    "hydra-core",
+    "h5py",
+    "imageio",
+    "pypng",
+    "wandb",
+    "lightning",
+    "transformers"
 ]
 
 [project.optional-dependencies]

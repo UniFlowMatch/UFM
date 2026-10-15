@@ -23,7 +23,12 @@ If you reach here, you are interested in building upon UFM, thank you for your e
 
 This branch contains the data downloading and processing instructions, example and full training scripts used to create UFM.
 
+## ✅ Data Processing Is Ready
+
+We have completed cleaning the data processing, all data should be ready. Please let us know if something does not work.
+
 ## Updates
+- [2025/10/26] Complete data source and processing scripts.
 - [2025/10/21] Complete training and most data processing scripts.
 - [2025/10/20] Benchmark & data script for primary results.
 - [2025/10/08] Released 980 resolution models.
@@ -38,13 +43,12 @@ This branch contains the data downloading and processing instructions, example a
 ## Getting Started
 ### Setup Environment
 
-You will need to `pip install` again if you switched to here from the other branches.
+You will need to `pip install -e .` again if you switched to here from the other branches.
 
 
 ### Setup Data
-Please refer to `preprocess_datasets/README.md` for a complete guide. 
 
-<!-- We provide preprocessed blendedmvs dataset for running the example training scripts. -->
+Please refer to `preprocess_datasets/README.md` for a complete guide. We provided preprocessed blendedmvs dataset for running the example training scripts.
 
 ### Setup Configuration
 
@@ -57,7 +61,7 @@ The `machines` configuration allows the same code to run on multiple places seam
 Modify the logic for setting the `machine` environment variable in the file, and run: 
 
 ```bash
-python bash_scripts/examples/blendedmvs.sh
+bash bash_scripts/examples/blendedmvs.sh
 ```
 
 ## Functional Components
